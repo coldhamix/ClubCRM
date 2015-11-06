@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coldhamix.clubApp.controller.EditStudentController">
+  <children>
+    <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" rotate="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <HBox alignment="CENTER" prefHeight="300.0" prefWidth="400.0" VBox.vgrow="NEVER">
+          <children>
+            <GridPane fx:id="grid" hgap="10.0" prefHeight="200.0" prefWidth="445.0" vgap="5.0" HBox.hgrow="NEVER">
+              <children>
+                <Label alignment="CENTER_RIGHT" text="Имя:" GridPane.columnIndex="0" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+                <Label text="Дата рождения:" GridPane.columnIndex="0" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+                <Button fx:id="saveButton" mnemonicParsing="false" onAction="#save" styleClass="controlButton" text="Сохранить" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                <Label fx:id="editLabel" text="Редактирование" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.rowSpan="1">
+                  <font>
+                    <Font size="24.0" />
+                  </font>
+                  <GridPane.margin>
+                    <Insets fx:id="x1" />
+                  </GridPane.margin>
+                </Label>
+                <TextField fx:id="studentName" onAction="#save" prefHeight="34.0" prefWidth="298.0" styleClass="controlInput" GridPane.columnIndex="1" GridPane.margin="$x1" GridPane.rowIndex="1" GridPane.vgrow="NEVER" />
+                        <DatePicker fx:id="datePicker" styleClass="controlInput" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="Телефон:" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+                        <Label text="ФИО родителя:" GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
+                        <Label text="Школа/детский сад:" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+                        <TextField fx:id="phone" onAction="#save" prefHeight="34.0" prefWidth="298.0" styleClass="controlInput" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="parentName" onAction="#save" prefHeight="34.0" prefWidth="298.0" styleClass="controlInput" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <TextField fx:id="institution" onAction="#save" prefHeight="34.0" prefWidth="298.0" styleClass="controlInput" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+              </children>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="231.0" minWidth="10.0" prefWidth="126.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="332.0" minWidth="10.0" prefWidth="309.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+          </children>
+        </HBox>
+      </children>
+      <stylesheets>
+        <URL value="@main.css" />
+      </stylesheets>
+    </VBox>
+  </children>
+</AnchorPane>

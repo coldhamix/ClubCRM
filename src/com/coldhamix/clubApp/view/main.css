@@ -1,0 +1,189 @@
+/*
+ * @SuppressWarnings
+ */
+
+
+
+/* 
+ * ROOT BEGIN
+ */
+ 
+.root {
+	-fx-background-color: white !important;
+}
+
+.programPanel {
+	-fx-background-color: #1BBC9B;
+}
+
+.labelTitle {
+	-fx-text-fill: white;
+	-fx-font-family: "Segoe UI Semibold";
+	-fx-font-size: 26pt;
+}
+
+.topMenuButtonActive {
+	-fx-border-width: 0 0 5 0;
+	-fx-border-style: solid;
+	-fx-border-color: rgba(255, 255, 255, 0.8);
+}
+
+.topMenuButton {
+	-fx-font-family: "Segoe UI Semibold";
+	-fx-background-color: transparent;
+	-fx-background-radius: 0;
+	-fx-background-insets: 0;
+	-fx-text-fill: white;
+}
+
+.topMenuButton:hover {
+	-fx-background-color: rgba(255, 255, 255, 0.1) !important;
+	-fx-cursor: hand;
+}
+
+.topMenuButton:pressed {
+	-fx-background-color: rgba(255, 255, 255, 0.4) !important;
+	-fx-text-fill: #006660 !important;
+}
+
+/*
+ * ROOT END
+ */
+ 
+ /*
+  * STUDENTS BEGIN
+  */
+  
+.controlButton {
+	-fx-background-color: transparent;
+	-fx-background-insets: 0;
+	-fx-background-radius: 0;
+	-fx-padding: 5px 10px;
+	-fx-border-width: 3px;
+	-fx-border-color: #1BBC9B;
+}
+
+.controlButton:hover {
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 3, 0, 1, 1);
+	-fx-background-color: white;	
+}
+
+.controlButton:pressed,
+.controlButton:selected {
+	-fx-effect: innershadow(one-pass-box, rgba(0, 0, 0, 0.2), 3, 0, 1, 1) !important;
+	-fx-background-color: #1BBC9B;
+	-fx-text-fill: white;
+}
+
+.searchField {
+	-fx-background-insets: 0;
+	-fx-background-radius: 0;
+	-fx-border-width: 3px 0 3px 3px;
+	-fx-border-color: #1BBC9B;
+}
+
+.controlButton.searchReset {
+	-fx-background-color: #1BBC9B !important;
+	-fx-text-fill: white !important;
+}
+
+.table-view {
+    -fx-base: #1BBC9B;
+    -fx-control-inner-background: white;
+    -fx-background-color: white;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-color: 
+        transparent
+        transparent
+        derive(-fx-base, 80%) 
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 10pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: -fx-base;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+}
+
+.table-view .scroll-bar:horizontal,
+.table-view .scroll-bar:vertical {
+	-fx-background-color: transparent !important;
+}
+
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+	-fx-background-color: transparent;
+	-fx-background-radius: 2em;
+	-fx-border-radius:2em;
+}
+
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+	-fx-background-radius: 2em;
+	-fx-background-insets: 0 4 0 4;
+}
+
+.table-view .scroll-bar:horizontal .thumb {
+	-fx-background-insets: 4 0 4 0 !important;
+}
+
+.table-view .increment-button,
+.table-view .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 2em;
+}
+
+     
+
+ /*
+  * STUDENTS END
+  */
+  
+ /*
+  * FORMS
+  */
+  
+ .check-box .box {
+ 	-fx-background-color: white;
+ 	-fx-border-width: 2;
+ 	-fx-border-color: -fx-base;
+ }
+  
+ .check-box .mark:selected {
+ 	-fx-background-color: -fx-base;	
+ }
+  
+ .error {
+ 	-fx-border-color: rgba(255, 0, 0, 1) !important;
+ }
+ 
+ .controlInput {
+ 	-fx-insets: 10px;
+ 	-fx-background-insets: 0;
+	-fx-background-radius: 0;
+	-fx-border-width: 3px;
+	-fx-border-color: #1BBC9B;
+ }
+ 
+ .controlDropdown {
+ 	-fx-padding: 0 !important;
+ }
